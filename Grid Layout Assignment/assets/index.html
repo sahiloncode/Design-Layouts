@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Page Layout</title>
+<link rel="stylesheet" src="style.css">
+<style>
+*{
+  margin:0;
+  padding:0;
+box-sizing:border-box;
+}
+
+body{
+background-color:#FBF5DE;
+}
+  .container{
+   display:grid;
+   grid-template-coloumns:20px, 20 px, 20px, 20px;
+   grid-template-area:coloumn;
+   border:2px solid black;
+   gap:20px;
+  
+p{
+ font-weight:400px;
+font-size:24px;
+padding:12px;
+}
+
+
+
+.pic{
+display:grid;
+width=844px; 
+height:220px;
+padding:24px;
+
+}
+}
+
+.img-3rd{
+ width:544px;
+heigh:220px;
+margin:90px 520px;
+display:flex;
+
+
+}
+
+.content{
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+button{
+padding:8px;
+background-color:#34699A;
+color:white;
+padding:12px;
+margin:30px;
+margin-top:30px;
+
+}
+
+sec-third{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:24px;
+margin:30px;
+}
+
+.sec-img{
+width:544px;
+heigh:220px;
+margin:90px 44px;
+display:flex;
+padding:24px 44px;
+}
+
+.sec-second{
+dispaly:flex;
+justify-content:center;
+align-items:center;
+margin:40px;
+}
+
+</style>
+</head>
+<body>
+<section>
+<center><h1>Demo Page Layout</h1></center>
+<center><img src="assets/1.jpg" width=844px; 
+height:220px;></center>
+</section>
+
+<section>
+<div class="container">
+<center><h2>This Is a Grid</h2></center>
+ <div>
+<img class="pic" src="assets/1.jpg"> 
+<p>This is a sample image 1 </p>
+<button>Button</button>
+
+
+ <div><img class="pic" src="assets/2.jpg">    <p>This is a sample image 2 </p>
+  <button>Button</button></div>
+
+ <div><img class="pic"  src="assets/3.jpg" >   
+<p>This is a sample image 3</p>
+<button>Button</button></div>
+
+
+ <div> <img class="pic" src="assets/1.jpg" >
+<p>This is a sample image 4</p>
+<button>Button</button></div>
+
+</div>      
+</div>  
+
+</section>
+<hr>
+<section class="sec-second">
+	<div class="sec-third">
+ 		<div>
+			<img class="pic"  src="assets/3.jpg" width=844px; height:220px;padding:24px; >
+			<h3>This is a random text </h3>
+			<p>This is a sample image 3</p>
+			<button>button</button>
+		</div>
+ 		<div>
+			<h3>This is a sample image</h3>
+			<p> This is just a random text which is content</p>
+			<button>Buttton</button><div>
+			<img  class="sec-img" class="pic"  src="assets/3.jpg" width=844px; height:220px;padding:24px; >   
+			<p>This is a sample image 3</p>
+		</div>	
+	</div>
+</section>
+
+<section>
+<div class="content">
+<span><h2>Just an image and paragraph</h2></span>
+<img class="img-3rd" src="assets/3.jpg" >
+
+</div>
+</section>
+</body>
+                            
